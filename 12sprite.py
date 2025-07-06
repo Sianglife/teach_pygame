@@ -1,7 +1,3 @@
-"""
-你會學到:
-1. 如何固定主角在畫面中的位置，透過背景達到移動的效果
-"""
 
 import pygame as pg
 import sys
