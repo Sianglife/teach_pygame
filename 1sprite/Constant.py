@@ -1,0 +1,2 @@
+SCREEN_SCALE = (800, 600)
+FPS = 60
