@@ -51,13 +51,12 @@ class RectangleObject(GameObject):
         self.rect = self.image.get_rect(topleft=position)
 
 
-
 # 物件初始化
-player = Player(Color.WHITE, 50, (100, 100))
+player = CircleObject(Color.WHITE, 50, (400, 300))
 
 obstacles = pg.sprite.Group(
-    Obstacle(Color.BLUE, 200, 150),
-    Obstacle(Color.GREEN, 100, 100, 200, 400)
+    RectangleObject(Color.BLUE, (200, 150), (100, 100)),
+    RectangleObject(Color.GREEN, (100, 100), (200, 400))
 )
 
 # *代表解包，把obstacles每一項物件都加入到all_sprites中
