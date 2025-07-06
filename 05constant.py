@@ -1,3 +1,8 @@
+"""
+你會學到:
+1. 如何使用常數來管理設定
+"""
+
 import pygame as pg
 import sys
 import Color
@@ -20,7 +25,6 @@ clock = pg.time.Clock()
 
 
 # 方形的位置變數
-
 rect_x = 100
 rect_y = 100
 

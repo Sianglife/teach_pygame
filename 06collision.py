@@ -1,3 +1,9 @@
+"""
+你會學到:
+1. 如何檢查圖形間的碰撞
+2. 如何改變顏色
+"""
+
 import pygame as pg
 import sys
 import Color
@@ -15,7 +21,6 @@ clock = pg.time.Clock()
 
 
 # 方形的位置變數
-
 r_x = 100
 r_y = 100
 c_color = Color.RED
@@ -28,7 +33,7 @@ while True:
     c = pg.draw.circle(screen, c_color, (200, 175), 50)  # 在方形內畫一個圓
 
     # 檢查碰撞
-    if r.colliderect(c):  # 如果方形碰到圓形
+    if c.colliderect(r):  # 如果圓形碰到方形
         c_color = Color.WHITE
     else:
         # 沒碰到就恢復圓的顏色

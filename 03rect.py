@@ -1,3 +1,9 @@
+"""
+你會學到:
+1. 如何繪製矩形
+2. 如何設定矩形顏色、位置、大小
+"""
+
 import pygame as pg
 import sys
 import Color

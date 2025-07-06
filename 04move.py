@@ -1,3 +1,9 @@
+"""
+你會學到:
+1. 如何控制矩形的位置
+2. 如何讓矩形跟隨鍵盤輸入移動
+"""
+
 import pygame as pg
 import sys
 import Color

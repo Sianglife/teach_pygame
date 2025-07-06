@@ -1,3 +1,9 @@
+"""
+你會學到:
+1. 如何開啟pygame視窗
+2. 如何設計主迴圈
+"""
+
 import pygame as pg
 import sys
 import Color # 顏色的常數檔

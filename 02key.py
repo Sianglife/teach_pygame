@@ -1,3 +1,8 @@
+"""
+你會學到:
+1. 如何檢查鍵盤輸入
+"""
+
 import pygame as pg
 import sys
 import Color
