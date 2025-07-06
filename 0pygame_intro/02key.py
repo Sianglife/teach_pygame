@@ -1,8 +1,3 @@
-"""
-你會學到:
-1. 如何檢查鍵盤輸入
-"""
-
 import pygame as pg
 import sys
 import Color
@@ -20,14 +15,9 @@ clock = pg.time.Clock()
 while True:
     screen.fill(Color.BLACK)  # 黑色背景
     pg.display.flip()  # 更新畫面(4move會有更多內容)
+    clock.tick(60)  # 控制FPS為每秒60幀
 
     # 檢查鍵盤輸入
-    """
-    試試看:
-    1.怎麼做可以讓按下ESC鍵時，程式結束? Hint: pg.K_ESCAPE
-    2.keys裡面長什麼樣子?print出來看看。
-    3.取keys[pg.K_LEFT]是什麼原理?為什麼拿他用if判斷?
-    """
     keys = pg.key.get_pressed()
     if keys[pg.K_LEFT]:
         print("Left key pressed")
@@ -43,5 +33,3 @@ while True:
         if e.type == pg.QUIT:
             pg.quit()
             sys.exit()
-
-    clock.tick(60)  # 控制FPS為每秒60幀

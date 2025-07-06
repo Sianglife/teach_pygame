@@ -1,12 +1,6 @@
-"""
-你會學到:
-1. 如何開啟pygame視窗
-2. 如何設計主迴圈
-"""
-
 import pygame as pg
 import sys
-import Color # 顏色的常數檔
+import Color  # 顏色的常數檔
 
 # 初始化pygame
 pg.init()
@@ -21,8 +15,8 @@ clock = pg.time.Clock()
 while True:
     screen.fill(Color.BLACK)  # 黑色背景
     pg.display.flip()  # 更新畫面(4move會有更多內容)
+    clock.tick(60)  # 控制FPS為每秒60幀
 
-    
     for e in pg.event.get():
         # 檢查退出事件(按X關閉視窗)
         """
@@ -34,5 +28,3 @@ while True:
         if e.type == pg.QUIT:
             pg.quit()
             sys.exit()
-
-    clock.tick(60)  # 控制FPS為每秒60幀
