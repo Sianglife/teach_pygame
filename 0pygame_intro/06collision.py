@@ -1,9 +1,3 @@
-"""
-你會學到:
-1. 如何檢查圖形間的碰撞
-2. 如何改變顏色
-"""
-
 import pygame as pg
 import sys
 import Color
@@ -29,7 +23,7 @@ while True:
     screen.fill(Color.BLACK)  # 黑色背景
 
     # 繪製圖形，加上指定成變數
-    r = pg.draw.rect(screen, Color.BLUE, (r_x, r_y, 200, 150))  # 正方形
+    r = pg.draw.rect(screen, Color.BLUE, (r_x, r_y, 200, 150))  
     c = pg.draw.circle(screen, c_color, (200, 175), 50)  # 在方形內畫一個圓
 
     # 檢查碰撞

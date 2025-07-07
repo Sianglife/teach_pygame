@@ -1,8 +1,3 @@
-"""
-你會學到:
-1. 如何固定主角在畫面中的位置，透過背景達到移動的效果
-"""
-
 import pygame as pg
 import sys
 import Color
@@ -24,9 +19,8 @@ r2_y = 400
 
 c_color = Color.RED
 
+
 # 定義移動的函數，並加入反向移動的選項
-
-
 def move_background(dx, dy):
     global r1_x, r1_y, r2_x, r2_y
 

@@ -1,8 +1,3 @@
-"""
-你會學到:
-1. 如何使用常數來管理設定
-"""
-
 import pygame as pg
 import sys
 import Color
