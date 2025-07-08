@@ -21,7 +21,7 @@ c_color = Color.RED
 
 
 # 定義移動的函數，並加入反向移動的選項
-def move_background(dx, dy, REVERSE=True):
+def move(dx, dy, REVERSE=True):
     global r1_x, r1_y, r2_x, r2_y
 
     """
@@ -50,13 +50,13 @@ while True:
     # 檢查鍵盤輸入
     keys = pg.key.get_pressed()
     if keys[pg.K_LEFT]:
-        move_background(-5, 0)
+        move(-5, 0)
     if keys[pg.K_RIGHT]:
-        move_background(5, 0)
+        move(5, 0)
     if keys[pg.K_UP]:
-        move_background(0, -5)
+        move(0, -5)
     if keys[pg.K_DOWN]:
-        move_background(0, 5)
+        move(0, 5)
 
     for e in pg.event.get():
         if e.type == pg.QUIT:
