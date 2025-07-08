@@ -21,10 +21,9 @@ c_color = Color.RED
 
 
 # 定義移動的函數，並加入反向移動的選項
-def move_background(dx, dy):
+def move_background(dx, dy, REVERSE=True):
     global r1_x, r1_y, r2_x, r2_y
 
-    REVERSE = True  # 是否反向移動
     """
     想想看:
     1.如果固定圓形，只移動方形，怎麼樣可以感覺是圓形在移動？
