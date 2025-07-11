@@ -23,8 +23,8 @@ while True:
     3.改變位置，試試看其他位置。
     4.改變大小，試試看其他大小。
     """
-    pg.draw.rect(screen, Color.RED, (100, 100, 200, 150)) # 正方形
 
+    pg.draw.rect(screen, Color.RED, (100, 100, 200, 150)) # 正方形
     """
     試試看:
     1.如果flip()不寫，會發生什麼事?

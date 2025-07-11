@@ -11,6 +11,7 @@ clock = pg.time.Clock()
 
 
 # 變數初始化
+
 r1_x = 100
 r1_y = 100
 

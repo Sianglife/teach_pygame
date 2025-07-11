@@ -55,7 +55,7 @@ class Player(Circle):
     def __init__(self, color, size, position=(100, 100)):
         super().__init__(color, size, position)
         self.launch_time = 0  # 記錄發射子彈的時間
-        self.angle = 75
+        self.angle = 15
 
     def fire(self):
         if self.launch_time and pg.time.get_ticks() - self.launch_time < 500:
@@ -97,7 +97,7 @@ obstacles = pg.sprite.Group(
 )
 
 bullets = pg.sprite.Group(
-    Rectangle(Color.RED, (30, 30), (500, 500))
+    Bullet(Color.RED, (30, 30), (500, 500))
 )
 
 # *代表解包，把obstacles每一項物件都加入到all_sprites中
